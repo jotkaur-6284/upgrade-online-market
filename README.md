@@ -23,45 +23,45 @@ This project implements a basic **Admin Dashboard** layout using **Node.js**, **
 
 
 ## HOME PAGE(Online Marketing)
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/1.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/1.PNG?raw=true)
 
 ---
 
 ## LOGIN PAGE
 ### If the user exists then only user can log in otherwise it will say "Please Signup"
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/2.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/2.PNG?raw=true)
 
 ---
 
 
 ## HOME PAGE AFTER USER LOGIN
 ### When user login it will display the user icon and instead of signup it shows logout
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/3.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/3.PNG?raw=true)
 
 ---
 
 
 ## BUY PAGE
 ### It will check first user is login or not if user is login then user can buy product otherwise "login first"
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/4.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/4.PNG?raw=true)
 
 ---
 
 ## BUY PAGE AFTER BUY PRODUCT
 ### User can select a product and it will display the msg of Successfull buy
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/5.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/5.PNG?raw=true)
 
 ---
 
 ## SELL PAGE
 ### If user is log in then user can select a product from device and can sell 
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/6.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/6.PNG?raw=true)
 
 ---
 
 ## SIGNUP PAGE
 ### Signup page and the data of signup page will be saved in the MongoDB
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/7.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-upgrade-online-market/blob/main/src/img/7.PNG?raw=true)
 
 ---
 
