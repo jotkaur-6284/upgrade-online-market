@@ -175,7 +175,7 @@ export default function ProductCatalog({ user, onBackClick ,}) {
     return;
   }
 
-  await fetch('http://localhost:5000/cart/add', {
+  await fetch('https://upgrade-online-market-2.onrender.com/cart/add', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username: user.username, product }),
