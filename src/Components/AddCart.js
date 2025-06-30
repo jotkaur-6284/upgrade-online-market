@@ -5,7 +5,7 @@ const AddCart = ({ user,onBack  }) => {
 
 useEffect(() => {
   if (!user || !user._id) return;
-fetch("https://upgrade-online-market-2.onrender.com/cart/user/${user._id}`)
+fetch(`https://upgrade-online-market-2.onrender.com/cart/user/${user._id}`)
     .then((res) => res.json())
     .then((data) => setCartItems(data))
     .catch((err) => console.error("Fetch cart error:", err));
