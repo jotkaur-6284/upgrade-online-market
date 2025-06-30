@@ -76,8 +76,8 @@ export default function Home({
       alert("Please login first to add to .");
       return;
     }
-
-    await fetch("http://localhost:5000/cart/add", {
+      
+    await fetch("https://upgrade-online-market-2.onrender.com/cart/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
