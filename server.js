@@ -102,13 +102,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // MongoDB connection
-mongoose.connect(
-  "mongodb+srv://DBjot:jot6284@cluster6284.vdk322b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster6284",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-)
+require('dotenv').config();
+const mongoose = require('mongoose');
+
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
