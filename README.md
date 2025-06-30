@@ -59,31 +59,31 @@ This project implements a basic **Admin Dashboard** layout using **Node.js**, **
 ---
 
 ## CHANGE ADDRESS
-![image](https://github.com/jotkaur-6284/upgrade-upgrade-online-market/blob/main/src/img/7.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/7.PNG?raw=true)
 
 ---
 
 ## payment (using stripe)
 ### after filling the details user can but that product
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/8.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/8.PNG?raw=true)
 
 ---
 
 ## SELL PAGE
 ### after log in user can sell the product
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/9.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/9.PNG?raw=true)
 
 ---
 
 ## DB
 ### All the login data , signup data , cart data is stored in the db (mongo db)
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/10.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/10.PNG?raw=true)
 
 ---
 
 ## CART DATA
 ### when user add the product in the cart that is displayed in the cart bpage as well as save that data by user id in the db
-![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/11.PNG?raw=true)
+![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/11.PNG?raw=true)
 
 ---
 
