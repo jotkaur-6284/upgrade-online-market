@@ -1,0 +1,197 @@
+/* Page background */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card container */
+.login-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  animation: fadeInUp 0.6s ease;
+  position: relative;
+}
+
+/* Heading */
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Back button */
+.back-btn {
+  position: absolute;
+  margin-top: -15px;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #3498db;
+}
+
+/* Form layout */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+.login-form input {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit button */
+.login-form button {
+  padding: 12px;
+  background: #3498db;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background: #2980b9;
+}
+
+/* Success Message */
+.success-msg {
+  margin-top: 15px;
+  text-align: center;
+  color: green;
+  font-weight: 500;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* -------- Signup Page Styles -------- */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at top left, #e0f7fa, #e1bee7);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-card {
+  background: #ffffff;
+  padding: 2.8rem;
+  border-radius: 25px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  animation: fadeSlide 0.6s ease;
+  text-align: center;
+}
+
+.signup-card h2 {
+  margin-bottom: 1.8rem;
+  color: #4a148c;
+  font-weight: 600;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form input {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.signup-form input:focus {
+  border-color: #ab47bc;
+  outline: none;
+}
+
+.signup-form button {
+  padding: 12px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-form button:hover {
+  background: #8e24aa;
+}
+
+.signup-back-btn {
+  background: transparent;
+  color: #333;
+  border: 1px solid #4f47bc;
+  margin-top: 10px;
+}
+
+.signup-back-btn:hover {
+  background: #f3e5f5;
+}
+
+.signup-message {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #2e7d32;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
