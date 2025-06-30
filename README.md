@@ -1,3 +1,79 @@
+# 🛠️ Online Market system
+
+This project implements a basic **Admin Dashboard** layout using **Node.js**, **Express.js**, and **EJS templating**. The dashboard is divided into two main sections:
+
+- A **left sidebar** with user icon, name, logout button, and navigation links.
+- A **right content section** that updates dynamically based on the selected item from the sidebar.
+
+---
+
+## 🚀 Features
+
+- User-friendly and responsive admin layout
+- Sidebar with:
+  - User Profile icon
+  - Admin Name
+  - Logout Button
+  - Navigation links: `Statistics`, `Job Posts`, `Users`, `Applications`
+- Dynamic main content area (EJS-based view rendering)
+- Clean and maintainable folder structure
+
+---
+
+
+
+## HOME PAGE(Online Marketing)
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/1.PNG?raw=true)
+
+---
+
+## LOGIN PAGE
+### If the user exists then only user can log in otherwise it will say "Please Signup"
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/2.PNG?raw=true)
+
+---
+
+
+## HOME PAGE AFTER USER LOGIN
+### When user login it will display the user icon and instead of signup it shows logout
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/3.PNG?raw=true)
+
+---
+
+
+## BUY PAGE
+### It will check first user is login or not if user is login then user can buy product otherwise "login first"
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/4.PNG?raw=true)
+
+---
+
+## BUY PAGE AFTER BUY PRODUCT
+### User can select a product and it will display the msg of Successfull buy
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/5.PNG?raw=true)
+
+---
+
+## SELL PAGE
+### If user is log in then user can select a product from device and can sell 
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/6.PNG?raw=true)
+
+---
+
+## SIGNUP PAGE
+### Signup page and the data of signup page will be saved in the MongoDB
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/7.PNG?raw=true)
+
+---
+
+## DATA BASE(mongo db)
+### The signup data will saved in the database
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/8.PNG?raw=true)
+
+---
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
