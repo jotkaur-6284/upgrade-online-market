@@ -11,21 +11,33 @@ export default function Login({ onLoginSuccess, onBack, loginMessage }) {
     try {
       const res = await fetch('https://upgrade-online-market-2.onrender.com/api/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }), // ✅ use "username", not email
       });
 
-      const data = await res.json();
+      let data;
+      const contentType = res.headers.get("content-type");
 
-      if (res.ok) {
-        alert('Login successful!');
+      if (contentType && contentType.includes("application/json")) {
+        data = await res.json();
+      } else {
+        const text = await res.text();
+        alert("Server error: " + text);
+        return;
+      }
+
+      if (data.success) {
+        console.log("Login success", data);
+        alert("Login successful!");
         onLoginSuccess(data.user);
       } else {
-        alert('Login failed');
+        alert(data.error || "Login failed");
       }
     } catch (err) {
-      alert('Server error');
-      console.error(err);
+      console.error("Login error:", err);
+      alert("Server error");
     }
   };
 
