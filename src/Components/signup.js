@@ -11,7 +11,7 @@ export default function Signup({ onHomeClick }) {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/signup', {
+      const response = await fetch('https://upgrade-online-market-2.onrender.com/api/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, age, email, password }),
