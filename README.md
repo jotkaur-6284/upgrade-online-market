@@ -27,53 +27,96 @@ This project implements a basic **Admin Dashboard** layout using **Node.js**, **
 
 ---
 
-## LOGIN PAGE
-### If the user exists then only user can log in otherwise it will say "Please Signup"
+## CART PAGE
+### if user is login then it will add the items in the cart page 
 ![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/2.PNG?raw=true)
 
 ---
 
 
-## HOME PAGE AFTER USER LOGIN
-### When user login it will display the user icon and instead of signup it shows logout
+## CATALOG PAGE
 ![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/3.PNG?raw=true)
 
 ---
 
 
 ## BUY PAGE
-### It will check first user is login or not if user is login then user can buy product otherwise "login first"
+### It will check first user is login or not if user is login then user can buy product otherwise "login first" also apply the filters
 ![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/4.PNG?raw=true)
 
 ---
 
-## BUY PAGE AFTER BUY PRODUCT
-### User can select a product and it will display the msg of Successfull buy
+## PRODUCT DESCRIPTION PAGE 
+### show the detailed description of the product (if add to cart then product shows in the cart page)
 ![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/5.PNG?raw=true)
 
 ---
 
-## SELL PAGE
-### If user is log in then user can select a product from device and can sell 
+## DETAIL ABOUT PRODUCT 
+### show the full detail about the product and user can also change the address 
 ![image](https://github.com/jotkaur-6284/upgrade-online-market/blob/main/src/img/6.PNG?raw=true)
 
 ---
 
-## SIGNUP PAGE
-### Signup page and the data of signup page will be saved in the MongoDB
+## CHANGE ADDRESS
 ![image](https://github.com/jotkaur-6284/upgrade-upgrade-online-market/blob/main/src/img/7.PNG?raw=true)
 
 ---
 
-## DATA BASE(mongo db)
-### The signup data will saved in the database
+## payment (using stripe)
+### after filling the details user can but that product
 ![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/8.PNG?raw=true)
 
 ---
 
+## SELL PAGE
+### after log in user can sell the product
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/9.PNG?raw=true)
+
+---
+
+## DB
+### All the login data , signup data , cart data is stored in the db (mongo db)
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/10.PNG?raw=true)
+
+---
+
+## CART DATA
+### when user add the product in the cart that is displayed in the cart bpage as well as save that data by user id in the db
+![image](https://github.com/jotkaur-6284/online-market/blob/main/src/img/11.PNG?raw=true)
+
+---
 
 
+ **Tech Stack**
+   - **Frontend**: React.js
+   - **Backend**: Node.js + Express
+   - **Database**: MongoDB (Mongoose)
+   - **Payments**: Stripe
+  
+**User Authentication**
+   - JWT-based login system
+   - Secure password hashing with bcrypt
 
+**Product Catalog APIs**
+   - CRUD routes for products (title, description, price, image)
+
+**Stripe Integration**
+   - Created secure payment API routes
+   - Integrated Stripe.js for frontend flow
+
+**Pages Implemented**
+   - Home Page (Product Listing)
+   - Product Details Page
+   - Signup/Login Pages
+   - Cart Page
+   - Checkout Page (Stripe)
+
+**Product Listing & Search**
+    - Grid layout for products
+    - Search and filter by price/category
+
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -90,57 +133,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+working live frontend 
+https://upgrade-marketing.netlify.app/
