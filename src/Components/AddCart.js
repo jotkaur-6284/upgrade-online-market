@@ -5,15 +5,15 @@ const AddCart = ({ user,onBack  }) => {
 
 useEffect(() => {
   if (!user || !user._id) return;
-
-  fetch(`http://localhost:5000/cart/user/${user._id}`)
+fetch("https://upgrade-online-market-2.onrender.com/cart/user/${user._id}`)
     .then((res) => res.json())
     .then((data) => setCartItems(data))
     .catch((err) => console.error("Fetch cart error:", err));
 }, [user]);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:5000/cart/delete/${id}`, { method: 'DELETE' });
+   await fetch(`https://upgrade-online-market-2.onrender.com/cart/delete/${id}`, { method: 'DELETE' });
+
     setCartItems(cartItems.filter(item => item._id !== id));
   };
 
